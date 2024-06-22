@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Simple Form</title>
+
+<head>
+    <style>
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 50px;
+            transform: translate(-50%, -50%);
+            background: rgba(10, 20, 20, 0.987);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(1, 10, 10, 0.6);
+            border-radius: 5%;
+        }
+
+        .login-box .User-box {
+            position: relative;
+        }
+
+        .login-box .User-boxinput {
+            width: 100%;
+            position: center;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .User-box label {
+            position: absolute;
+            top: 0;
+            left: ;
+            padding: 16px 0;
+            font-size: 16px;
+            color: green;
+            pointer-events: none;
+            transition: 1s;
+        }
+
+        .login-box .User-box input:focus~label,
+        .login-box .User-box input:valid~label {
+            top: -20px;
+            left: 10px;
+            color: grey;
+            font-size: 14px;
+            transition: 1s;
+        }
+
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+
+        .login-box a:hover {
+            background: #03f40f;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03f40f,
+            0 0 25px #03f40f,
+            0 0 50px #03f40f,
+            0 0 100px #03f40f;
+        }
+
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+
+        .login-box a span:nth-child(1) {
+            bottom: 2px;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(45deg, transparent, #03f40f);
+            animation: animate 2s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <pre> <h1>              Login Form is Here</h1></pre>
+    <div class="login-box">
+        <form actions="">
+            <pre>
+        <div class="User-box">
+            <input type="text" required="">
+            <label for="">Username</label>
+        </div>
+        </pre>
+            <pre>
+        <div class="User-box">
+            <input type="Password" required="">
+            <label for="">Password</label>
+        </div>
+        </pre>
+            <center>
+                <a href="#">Send<span></span></a>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>
